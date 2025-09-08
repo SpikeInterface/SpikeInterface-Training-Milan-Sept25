@@ -53,7 +53,14 @@ merge
 
 ## Installation
 
+Please visit [this page](https://github.com/SpikeInterface/spikeinterface/tree/main/installation_tips) to install on your laptop python+spikeinterface.
 
+Computing node with preinstalled environement will be also provided.
 
 
 ## Dataset
+
+Please download theses datasets on your laptop:
+1. 4-tetrodes recording : ...
+2. Nueopixels2.0 one-shank 20min  : ...
+3. In vitro recording : ...
