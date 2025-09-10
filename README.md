@@ -5,14 +5,16 @@ Material for SpikeInterface Tutorial @ Human Technopole - Milan - September 2025
 
 ## Schedule
 
-**Day 3 - Session 1 (2h) - Wed 24/09 11:00-13:00**
+**Day 3 - Session 1 (2h) - Wed 24/09 14:00-15:00**
 
-1. 45-60min: Introduction to Spike Sorting (detailed theoretical) - Sam
-2. 30-45min: Introductionto to SpikeInterface - Alessio
-3. 15-30min: Installation check, get jupyter lab ready to go (trivial test notebook to run) - Chris
+1. 30min: Introduction to Spike Sorting (detailed theoretical) - Sam
+2. 25min: Introductionto to SpikeInterface - Alessio
+3. 5min: Installation check, get jupyter lab ready to go (trivial test notebook to run) - Chris
 
 
-**Day 3 - Session 2 (3h) - Wed 24/09 14:00-17:00**
+**Day 3 - Session 2 (3h) - Wed 24/09 15:00-18:00**
+
+
 Step-by-step hands-on tutorial
 
 1. Reading  + Manipulation (30 min - Chris)
@@ -26,7 +28,7 @@ HAND-ON: check if there are bad channels and see if detect bad channels finds th
 (DEMO) Drift: only estimation + plotting for quality control (Sam)
 
 3. Spike sort (DEMO - Kilosort4 - maybe ok on CPU) (30 min) (Sam)
-HAND-ON: run SpykingCIRCUS2 - are there differences? #units / #spikes 
+HAND-ON: run tridesclous2 - are there differences? #units / #spikes 
 (optional: comparison)
 Comparison - plot agreements (DEMO)
 
