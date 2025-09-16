@@ -3,7 +3,7 @@ name = "notebooks"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.9,<3.13"
 dependencies = [
     "hdbscan>=0.8.40",
     "jupyterlab>=4.4.7",
