@@ -55,10 +55,31 @@ merge
 
 ## Installation
 
-Please visit [this page](https://github.com/SpikeInterface/spikeinterface/tree/main/installation_tips) to install on your laptop python+spikeinterface.
+We recommend that you [install uv](https://docs.astral.sh/uv/getting-started/installation/). This is an unbelievably good new package
+management tool for Python.
 
-Computing node with preinstalled environement will be also provided.
+Open your Terminal app and cd (change directory) to where you like to keep github repos. Then clone this repo, and navigate to the `notebooks` folder of it by entering the following commands into your Terminal:
 
+``` shell
+git clone https://github.com/SpikeInterface/SpikeInterface-Training-Milan-Sept25.git
+cd SpikeInterface-Training-Milan-Sept25/notebooks/
+```
+
+Now open jupyter lab (you don't need to install this - uv will take care of it) using uv:
+
+``` shell
+uv run jupyter lab
+```
+
+Or if you prefer to use vscode:
+
+``` shell
+uv run code .
+```
+
+If you like traditional virtual environments, please visit [this page](https://github.com/SpikeInterface/spikeinterface/tree/main/installation_tips) to install on your laptop python+spikeinterface.
+
+Computing node with a preinstalled environement will be also provided.
 
 ## Dataset
 
