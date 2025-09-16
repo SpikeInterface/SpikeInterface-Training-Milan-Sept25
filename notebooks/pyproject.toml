@@ -7,6 +7,6 @@ requires-python = ">=3.13"
 dependencies = [
     "hdbscan>=0.8.40",
     "jupyterlab>=4.4.7",
-    "kilosort>=4.1.1",
+    "kilosort==4.0.39",
     "spikeinterface[full,widgets]>=0.103.0",
 ]
