@@ -79,6 +79,11 @@ Computing node with a preinstalled environment will be also provided.
 ## Dataset
 
 Please download theses datasets on your laptop:
-1. 4-tetrodes recording : ...
-2. Nueopixels2.0 one-shank 20min  : ...
-3. In vitro recording : ...
+
+https://filesender.renater.fr/?s=download&token=420bcfb8-f134-473a-be40-c28235dda5da
+
+1. 4-tetrodes recording : 1544_2023-04-21_09-55-34_of.zip
+2. Nueopixels2.0 one-shank 20min  : M25_D23_2024-11-11_13-11-10_OF1.zip
+3. In vitro recording : mouse_CTX_14D.brw
+
+And all of then if you want.
