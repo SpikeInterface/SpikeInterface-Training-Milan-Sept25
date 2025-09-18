@@ -3,10 +3,20 @@ name = "notebooks"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.9,<3.13"
+requires-python = ">=3.10,<3.13"
 dependencies = [
     "hdbscan>=0.8.40",
     "jupyterlab>=4.4.7",
     "kilosort==4.0.39",
-    "spikeinterface[full,widgets]>=0.103.0",
+    "spikeinterface[full,widgets]",
+    "PySide6<6.8",
+    "pyqtgraph",
+    "spikeinterface-gui",
+    "ephyviewer",
 ]
+
+[tool.uv.sources]
+
+neo = {url = "https://github.com/NeuralEnsemble/python-neo/archive/master.zip"}
+spikeinterface = {url = "https://github.com/SpikeInterface/spikeinterface/archive/main.zip"}
+spikeinterface-gui = {url = "https://github.com/SpikeInterface/spikeinterface-gui/archive/main.zip"}

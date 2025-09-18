@@ -5,52 +5,46 @@ Material for SpikeInterface Tutorial @ Human Technopole - Milan - September 2025
 
 ## Schedule
 
-**Day 3 - Session 1 (2h) - Wed 24/09 14:00-15:00**
+**Day 3 - Theoretical overview - Wed 24/09 14:00-15:00**
 
-1. 30min: Introduction to Spike Sorting (detailed theoretical) - Sam
-2. 25min: Introductionto to SpikeInterface - Alessio
-3. 5min: Installation check, get jupyter lab ready to go (trivial test notebook to run) - Chris
+1. Introduction to Spike Sorting (30 min - Sam)
+2. Introduction to `SpikeInterface` (25 min - Alessio)
+3. Installation check, get jupyter lab ready to go (5 min - Chris)
 
+**Day 3 - Hands on tutorials - Wed 24/09 15:00-18:00**
 
-**Day 3 - Session 2 (3h) - Wed 24/09 15:00-18:00**
+1. Reading + Manipulation (30 min - Chris)
+    - Read and visualise data
+    - The importance of probes
 
+2. Preprocessing (45 min - Alessio)
+    - Apply and visualize preprocessing 
+    - Detect bad channels
+    - Motion correction
 
-Step-by-step hands-on tutorial
+3. Spike sort (30 min - Sam)
+    - Run a spike sorter
+    - Compare spike sorter outputs
 
-1. Reading  + Manipulation (30 min - Chris)
-Read data + visualize + select_channels+time_slice (DEMO + HAND-ON)
-Attach probe (on 32ch simulated recording): create a 4-shank probe with 8 channels and attach it to the simulated recording (DEMO)
-Save to JSON
+4. Analyze Sorting (45 min - Chris)
+    - Create a `SortingAnalyzer` to explore your sorting
+    - Compute some extensions
+    - Play with the extension outputs
 
-2. Preprocess (DEMO - point to docs - skip remove artifacts + save recording - job_kwargs) (45 min) (Alessio)
-HAND-ON: apply+visualize preprocessing 
-HAND-ON: check if there are bad channels and see if detect bad channels finds them all?
-(DEMO) Drift: only estimation + plotting for quality control (Sam)
+5. Curate (30 min - Alessio) 
+    - Simple, threshold-based curation
+    - Curation using ML models
+    - Merging units
 
-3. Spike sort (DEMO - Kilosort4 - maybe ok on CPU) (30 min) (Sam)
-HAND-ON: run tridesclous2 - are there differences? #units / #spikes 
-(optional: comparison)
-Comparison - plot agreements (DEMO)
+**Day 4 - GUI and Pipelines - Thu 25/09 09:30-13:00**
 
-4. Analyze Sorting (DEMO + HAND-ON) (45 min) (Chris)
-Create analyzer and compute extensions (DEMO)
-Hands-on 1: get the SNR distribution and plot an histogram
-Hands-on 2: plot ACG of best/worst SNR unit
-Hands-on 3: use the SI API to get extremum channels/amplitudes etc and plot the template in matplotlib
+1. SpikeInterface-GUI (60min - Sam)
 
-5. Curate (30 min) (Alessio) 
-Threshold-based
-Model-based
-merge
-(Manual: SIGUI - teaser for next day)
+*10:30-11.00: Coffee break*
 
-**Day 4 - Session 3 (3.5h) - Thu 25/09 09:30-13:00**
-
-1. 1hr: SpikeInterface-GUI - (DEMO + HANDS ON) (Sam)
-
-2. 2.5hr: DEVELOP A FULL PIPELINE SCRIPT (Chris)
-
-
+2. Develop a full pipeline script (90min - Chris)
+    - Basics of pipelines in Python
+    - Designing a pipeline for your own data
 
 
 ## Installation
@@ -79,7 +73,8 @@ uv run code .
 
 If you like traditional virtual environments, please visit [this page](https://github.com/SpikeInterface/spikeinterface/tree/main/installation_tips) to install on your laptop python+spikeinterface.
 
-Computing node with a preinstalled environement will be also provided.
+Computing node with a preinstalled environment will be also provided.
+
 
 ## Dataset
 
