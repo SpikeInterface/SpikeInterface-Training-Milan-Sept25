@@ -76,14 +76,53 @@ If you like traditional virtual environments, please visit [this page](https://g
 Computing node with a preinstalled environment will be also provided.
 
 
-## Dataset
+# Overview of available datasets
 
-Please download theses datasets on your laptop:
+## In vivo
+
+### M25_D23_2024-11-11_13-11-10_OF1
+
+Neuropixels 2.0 dataset (384 channels) acquired with the Open Ephys GUI in binary format.
+You can use the `spikeinterface.extractor.read_openephys()` function to read the data.
+
+### 1544_2023-04-21_09-55-34_of
+
+Recording with 16 channels organized in 4 tetrodes acquired with the Open Ephys GUI in "openephys" format.
+You can use the `spikeinterface.extractor.read_openephys()` function to read the data.
+
+### aind_ecephys_session.zarr
+
+Recording with a Neuropixels 2.0 - 4 shank probe stored as a compressed SpikeInterface Zarr folder.
+You can use the `spikeinterface.load()` (or `spikeinterface.read_zarr()`) function to read the data.
+
+### cambridgeNT_openephys
+
+Recording with a Cambridge Neurotech [ASSY-236-H5](https://github.com/SpikeInterface/probeinterface_library/blob/main/cambridgeneurotech/ASSY-236-H5/ASSY-236-H5.png) probe and wired to the Open Ephys acquisition system via the 
+Cambridge NeuroTech mini-amp-64.
+You can use the `spikeinterface.extractor.read_openephys()` function to read the data.
+The probe is available from the [probeinterface_library](https://github.com/SpikeInterface/probeinterface_library) (see [docs](https://probeinterface.readthedocs.io/en/main/examples/ex_10_get_probe_from_library.html) here) and the wiring is available in [`ProbeInterface`](https://probeinterface.readthedocs.io/en/main/examples/ex_11_automatic_wiring.html#).
+
+
+## In vitro
+
+### mouse_CTX_14D.brw
+
+Primary mouse cortex for E18 embryos. Plated 80K on CorePlate 1W38/60 3Brain, recorded after 14 days in culture 
+with 3Brain BioCAM system. 
+You can use the `spikeinterface.extractor.read_biocam()` function to read the data. 
+
+
+### human_ngn2_100K_c_55D.brw
+
+Human glutamatergic neurons induced via ngn2 method. Plated 100k on CorePlate 1W38/60 3Brain, recorded after 55 days in 
+culture with 3Brain BioCAM system. 
+You can use the `spikeinterface.extractor.read_biocam()` function to read the data. 
+
+> [!IMPORTANT]  
+> The 3Brain BioCAM system saves the data in unsigned integers. You should convert it to signed integers for a smooth
+> processing. See documentation [here](https://spikeinterface.readthedocs.io/en/latest/how_to/unsigned_to_signed.html). Note that the `bit_depth` for this system is 12!
+
+
+Please download these datasets on your laptop from this link:
 
 https://filesender.renater.fr/?s=download&token=420bcfb8-f134-473a-be40-c28235dda5da
-
-1. 4-tetrodes recording : 1544_2023-04-21_09-55-34_of.zip
-2. Nueopixels2.0 one-shank 20min  : M25_D23_2024-11-11_13-11-10_OF1.zip
-3. In vitro recording : mouse_CTX_14D.brw
-
-And all of then if you want.

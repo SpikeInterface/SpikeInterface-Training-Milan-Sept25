@@ -15,6 +15,7 @@ dependencies = [
     "spikeinterface-gui",
     "ephyviewer",
     "spython",
+    "panel"
 ]
 
 [tool.uv.sources]
